@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>VIT Entrance Quiz</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto+Condensed:wght@700&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+  <!-- <link rel="app" href="app.js"> -->
+</head>
+
+<body style="background-color:#16213E">
+  <br>
+<h1><strong>VIT Entrance Quiz</strong></h1>
+  <div class="container1">
+
+    <form action="quiz.html" id="myForm" method="post">
+      <center>
+        <div class="f">
+          <br>
+          <br>
+          <label class=""><strong>Full Name</strong></label>
+          <br>
+          <i class="fa fa-user-circle-o " style="font-size:2rem;" aria-hidden="true"></i>
+          <input type="text" name="Full_Name" id="Full_Name" placeholder="ex: Harshith" value="" onblur="validateName(name)">
+          <span id="Full_Name_Error" style="display: none;color:#C21010;width:30%">You can only use alphabetic characters</span>
+          <br>
+          <br>
+
+
+          <label class=""><strong>VIT Email</strong></label>
+          <br>
+          <i class="fa fa-envelope " style="font-size:2rem;" aria-hidden="true"></i>
+          <input type="email" name="email" id="email" placeholder="ex: nadavadiharshith.gowd2020@vitstudent.ac.in"onblur="validateEmail(name)" />
+          <span id="emailError" style="display: none;color:#C21010">You must enter a valid email address</span>
+          <br>
+          <br>
+          <br>
+          <button type="submit" style="display: none;a" class="btn btn-success" id="submit" name="submit" onclick="validateForm(name)" >Start Quiz</button>
+          </div>
+      </center>
+    </form>
+
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+      <center>
+        <div class="">
+          <i class="fa fa-facebook-official s" aria-hidden="true"></i>
+          <i class="fa fa-instagram s" aria-hidden="true"></i>
+          <i class="fa fa-twitter s" aria-hidden="true"></i>
+        </div>
+      </center>
+      <div class="footer-copyright text-center py-3">© 2022 Copyright: VIT</div>
+    </footer>
+  </div>
+  <script src="app.js" charset="utf-8"></script>
+</body>
+</html>

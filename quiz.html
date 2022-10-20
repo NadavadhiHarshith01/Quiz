@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/styleq.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto+Condensed:wght@700&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <!-- <link rel="app" href="app.js"> -->
+
+  </head>
+  <body>
+    <!-- Image and text -->
+    <div class="">
+      <h1 style="background-color:black;color:white;padding:0 100% 0 100% 0; margin:0;  font-weight: 600;  font-size: 8rem;">VIT Entrance Exam</h1>
+    </div>
+<div class="main-div">
+
+  <center>
+
+    <h1 class="heading">Round</h1>
+    <div id="app" style="background-color:white;padding:0 2px 0 2px;border-radius:5px;"></div>
+
+  </center>
+  <div class="inner-div">
+
+    <h2 class="question">question</h2>
+    <ul>
+      <div class="pa"></div>
+      <li>
+        <input type="radio" name="answer" id="ans1" class="answer">
+        <label for="ans1" id="option1">Answer option</label>
+      </li>
+      <li>
+        <input type="radio" name="answer" id="ans2" class="answer">
+        <label for="ans2" id="option2">Answer option</label>
+      </li>
+      <li>
+        <input type="radio" name="answer" id="ans3" class="answer">
+        <label for="ans3" id="option3">Answer option</label>
+      </li>
+      <li>
+        <input type="radio" name="answer" id="ans4" class="answer">
+        <label for="ans4" id="option4">Answer option</label>
+      </li>
+    </ul>
+    <center>
+      <button type="submit" style="font-size:2rem;float:left;" class="btn btn-success b" id="submit" name="submit" onclick="getCheck()" >Next</button>
+      <button type="submit" style="font-size:2rem;float:left;" class="btn btn-outline-secondary b" id="submit" name="submit" onclick="getCheck()" >Previous</button>
+      <button type="submit" style="font-size:2rem;float:left;" class="btn btn-outline-danger b" id="submit" name="submit" onclick="getCheck()" >Skip</button>
+    </center>
+    <div class="scoreArea" id="showScore">
+
+    </div>
+
+
+    </div>
+    <div class="l">
+      <p>
+
+      <button type="button" style="width:2rem;margin:0.5rem;padding:4rem;font-size:2rem;"class="btn btn-outline-primary">1</button>
+      <button type="button" style="width:2rem;margin:0.5rem;padding:4rem;font-size:2rem;"class="btn btn-outline-primary">2</button>
+      <button type="button" style="width:2rem;margin:0.5rem;padding:4rem;font-size:2rem;"class="btn btn-outline-primary">3</button>
+      <button type="button" style="width:2rem;margin:0.5rem;padding:4rem;font-size:2rem;"class="btn btn-outline-primary">4</button>
+      <button type="button" style="width:2rem;margin:0.5rem;padding:4rem;font-size:2rem;"class="btn btn-outline-primary">5</button>
+      <button type="button" style="width:2rem;margin:0.5rem;padding:4rem;font-size:2rem;"class="btn btn-outline-primary">6</button>
+      <button type="button" style="width:2rem;margin:0.5rem;padding:4rem;font-size:2rem;"class="btn btn-outline-primary">7</button>
+      <button type="button" style="width:2rem;margin:0.5rem;padding:4rem;font-size:2rem;"class="btn btn-outline-primary">8</button>
+      <button type="button" style="width:2rem;margin:0.5rem;padding:4rem;font-size:2rem;"class="btn btn-outline-primary">9</button>
+      <button type="button" style="width:2rem;margin:0.5rem;padding:4rem;font-size:2rem;"class="btn btn-outline-primary">10</button>
+    </p>
+
+  </div>
+  </div>
+
+<script src="app.js" charset="utf-8"></script>
+
+  </body>
+</html>
